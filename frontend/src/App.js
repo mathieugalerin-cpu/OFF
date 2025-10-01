@@ -103,8 +103,8 @@ const HomePage = () => {
                   <span style={{color: '#7ED957'}}> rallume l'aventure</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  OFF aide vos enfants à découvrir le plaisir des activités déconnectées 
-                  grâce à des défis personnalisés et un système de récompenses motivant.
+                  Avec Nimo, votre guide OFF, transformez chaque déconnexion en aventure ! 
+                  Des défis personnalisés qui font dire "la vraie vie, c'est génial !" 🌟
                 </p>
               </div>
               
