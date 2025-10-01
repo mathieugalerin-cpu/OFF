@@ -318,7 +318,7 @@ const CreateChildPage = () => {
                   data-testid="child-name-input"
                   value={formData.name}
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
-                  placeholder="Ex: Emma, Louis..."
+                  placeholder="Ex: Lilas, Emile..."
                   className="text-lg p-4"
                 />
               </div>
