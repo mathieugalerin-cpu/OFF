@@ -1,5 +1,13 @@
 # 🌟 OFF – L’app qui rallume la vraie vie
 
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/mathieugalerin-cpu/OFF/releases)
+[![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/mathieugalerin-cpu/OFF/actions)
+[![License](https://img.shields.io/badge/license-Propri%C3%A9taire-red.svg)](https://github.com/mathieugalerin-cpu/OFF/blob/main/LICENSE.md)
+[![Contributors](https://img.shields.io/github/contributors/mathieugalerin-cpu/OFF.svg)](https://github.com/mathieugalerin-cpu/OFF/graphs/contributors)
+[![Issues](https://img.shields.io/github/issues/mathieugalerin-cpu/OFF.svg)](https://github.com/mathieugalerin-cpu/OFF/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/mathieugalerin-cpu/OFF.svg)](https://github.com/mathieugalerin-cpu/OFF/commits/main)
+[![Follow on GitHub](https://img.shields.io/github/followers/mathieugalerin-cpu?style=social)](https://github.com/mathieugalerin-cpu)# 🌟 OFF – L’app qui rallume la vraie vie
+
 ![Logo OFF](https://via.placeholder.com/600x200.png?text=OFF+Logo)  
 > **OFF** transforme la déconnexion numérique en jeu éducatif pour les enfants et les familles.  
 Éteindre l’écran devient fun, motivant et collectif.  
