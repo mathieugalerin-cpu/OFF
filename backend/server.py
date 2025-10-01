@@ -203,14 +203,27 @@ async def generate_challenge(request: GenerateChallengeRequest):
         # Generate challenge with AI
         gpt5_chat = get_gpt5_chat()
         
-        prompt = f"""Crée un défi personnalisé pour {child_obj.name}, {child_obj.age} ans.
-        Intérêts: {', '.join(child_obj.interests) if child_obj.interests else 'activités variées'}
-        Catégorie souhaitée: {request.category or 'libre choix'}
+        prompt = f"""Hey ! C'est Nimo qui parle ! 🌟 
+        
+        Crée un défi OFF génial personnalisé pour {child_obj.name}, {child_obj.age} ans.
+        
+        IMPORTANT : Utilise le prénom "{child_obj.name}" dans le titre ET dans la description pour rendre le défi unique et personnel !
+        
+        Profil de {child_obj.name}:
+        - Âge: {child_obj.age} ans
+        - Passions: {', '.join(child_obj.interests) if child_obj.interests else 'découvrir de nouvelles activités'}
+        - Catégorie défi: {request.category or 'libre choix (surprise-moi !)'}
+        
+        Ton défi doit être:
+        ✨ Personnalisé avec le prénom de {child_obj.name}
+        🎯 Adapté à son âge et ses passions
+        🌟 Encourageant et positif (jamais "il faut", toujours "viens découvrir")
+        🎮 Ludique comme un jeu vidéo mais dans la vraie vie
         
         Réponds UNIQUEMENT avec ce format JSON:
         {{
-            "title": "titre accrocheur du défi",
-            "description": "description détaillée et motivante",
+            "title": "Titre accrocheur avec le prénom de {child_obj.name}",
+            "description": "Description motivante qui parle directement à {child_obj.name}, utilise son prénom et ses passions. Commence par 'Hey {child_obj.name} !' ou '{child_obj.name}, es-tu prêt(e) pour...' Style enthousiaste de Nimo !",
             "category": "reading/outdoor/creative/family/sport/learning",
             "duration_minutes": nombre_entier,
             "difficulty": "easy/medium/hard"
