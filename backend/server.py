@@ -349,12 +349,25 @@ async def get_child_stats(child_id: str):
             category = challenge.get("category", "other")
             categories[category] = categories.get(category, 0) + 1
     
+    # Clean recent challenges data to avoid ObjectId issues
+    recent_challenges = []
+    for c in completed[-5:] if completed else []:
+        clean_challenge = {
+            "id": c.get("id"),
+            "child_id": c.get("child_id"),
+            "challenge_id": c.get("challenge_id"),
+            "completed_at": c.get("completed_at"),
+            "fun_credits_earned": c.get("fun_credits_earned"),
+            "validation_method": c.get("validation_method")
+        }
+        recent_challenges.append(clean_challenge)
+    
     return {
         "child_id": child_id,
         "total_fun_credits": total_credits,
         "total_challenges_completed": total_challenges,
         "categories_breakdown": categories,
-        "recent_challenges": completed[-5:] if completed else []
+        "recent_challenges": recent_challenges
     }
 
 @api_router.get("/leaderboard", response_model=List[Leaderboard])
