@@ -31,15 +31,15 @@ const Navigation = () => {
           </Link>
           
           <div className="flex space-x-6">
-            <Link to="/" className="flex items-center space-x-2 text-white hover:text-emerald-100 transition-colors">
+            <Link to="/" className="flex items-center space-x-2 text-white hover:text-yellow-200 transition-colors">
               <Home className="h-5 w-5" />
               <span className="hidden sm:block">Accueil</span>
             </Link>
-            <Link to="/families" className="flex items-center space-x-2 text-white hover:text-emerald-100 transition-colors">
+            <Link to="/families" className="flex items-center space-x-2 text-white hover:text-yellow-200 transition-colors">
               <Users className="h-5 w-5" />
               <span className="hidden sm:block">Familles</span>
             </Link>
-            <Link to="/leaderboard" className="flex items-center space-x-2 text-white hover:text-emerald-100 transition-colors">
+            <Link to="/leaderboard" className="flex items-center space-x-2 text-white hover:text-yellow-200 transition-colors">
               <Trophy className="h-5 w-5" />
               <span className="hidden sm:block">Classement</span>
             </Link>
