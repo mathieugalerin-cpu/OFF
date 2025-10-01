@@ -387,9 +387,13 @@ async def get_leaderboard():
                     else:
                         continue  # Skip invalid dates
                     
+                    # Ensure timezone compatibility
+                    if completed_at.tzinfo is None:
+                        completed_at = completed_at.replace(tzinfo=timezone.utc)
+                    
                     if completed_at > week_ago:
                         recent_completed.append(c)
-                except (ValueError, KeyError):
+                except (ValueError, KeyError, TypeError):
                     continue  # Skip invalid entries
             weekly_challenges += len(recent_completed)
         
