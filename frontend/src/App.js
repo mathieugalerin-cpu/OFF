@@ -22,8 +22,10 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="bg-white rounded-full p-2">
-              <Sparkles className="h-6 w-6 text-emerald-600" />
+            <div className="bg-white rounded-full p-2 flex items-center justify-center">
+              <div className="w-6 h-6 rounded-full border-2 border-green-500 flex items-center justify-center text-green-600 font-bold">
+                ⏻
+              </div>
             </div>
             <span className="text-2xl font-bold text-white">OFF</span>
           </Link>
