@@ -110,13 +110,13 @@ const HomePage = () => {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/children/create">
-                  <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 text-lg">
-                    Commencer l'aventure
+                  <Button size="lg" style={{backgroundColor: '#7ED957'}} className="hover:opacity-90 text-white px-8 py-4 text-lg font-semibold">
+                    🌟 Commencer l'aventure OFF
                   </Button>
                 </Link>
                 <Link to="/challenges">
-                  <Button variant="outline" size="lg" className="border-emerald-600 text-emerald-600 hover:bg-emerald-50 px-8 py-4 text-lg">
-                    Découvrir les défis
+                  <Button variant="outline" size="lg" style={{borderColor: '#4DA6FF', color: '#4DA6FF'}} className="hover:bg-blue-50 px-8 py-4 text-lg">
+                    Découvrir avec Nimo
                   </Button>
                 </Link>
               </div>
