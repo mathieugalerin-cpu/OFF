@@ -376,8 +376,21 @@ async def get_leaderboard():
             # Count challenges from last 7 days
             from datetime import timedelta
             week_ago = datetime.now(timezone.utc) - timedelta(days=7)
-            recent_completed = [c for c in completed if 
-                              datetime.fromisoformat(c["completed_at"]) > week_ago]
+            recent_completed = []
+            for c in completed:
+                try:
+                    completed_at = c["completed_at"]
+                    if isinstance(completed_at, str):
+                        completed_at = datetime.fromisoformat(completed_at)
+                    elif isinstance(completed_at, datetime):
+                        pass  # Already a datetime object
+                    else:
+                        continue  # Skip invalid dates
+                    
+                    if completed_at > week_ago:
+                        recent_completed.append(c)
+                except (ValueError, KeyError):
+                    continue  # Skip invalid entries
             weekly_challenges += len(recent_completed)
         
         leaderboard_data.append({
