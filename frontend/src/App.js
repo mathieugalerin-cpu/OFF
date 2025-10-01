@@ -95,12 +95,12 @@ const HomePage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="bg-emerald-100 text-emerald-800 border-emerald-200 px-4 py-2">
-                  ⭐ L'app qui rallume la vraie vie
+                <Badge className="bg-green-100 text-green-800 border-green-200 px-4 py-2">
+                  🌟 Nimo t'invite à rallumer la vraie vie
                 </Badge>
                 <h1 className="text-5xl font-bold text-gray-900 leading-tight">
-                  Transformez le temps d'écran en 
-                  <span className="text-emerald-600"> aventures réelles</span>
+                  Éteins l'écran, 
+                  <span style={{color: '#7ED957'}}> rallume l'aventure</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   OFF aide vos enfants à découvrir le plaisir des activités déconnectées 
