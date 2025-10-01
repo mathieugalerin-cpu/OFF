@@ -61,7 +61,7 @@ Voir le détail dans [ROADMAP.md](ROADMAP.md).
 ---
 
 ## 🛠️ Installation (dev)
-*(si tu veux que d’autres contribuent)*  
+  
 ```bash
 git clone (https://github.com/mathieugalerin-cpu/OFF/commits?author=mathieugalerin-cpu)/off.git
 cd off
